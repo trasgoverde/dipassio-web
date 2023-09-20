@@ -1,4 +1,5 @@
 import { UserButton } from "@clerk/nextjs";
+import  Navbar  from "@/components/navbar";
 
 const DashboardLayout = ({
     children,
@@ -16,7 +17,8 @@ const DashboardLayout = ({
            </div> 
         </div>
         <main className="md:pl-72">
-          Hello Content
+          <Navbar />
+          {children}
           </main>
       </div>
      );
