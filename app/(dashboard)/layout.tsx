@@ -12,7 +12,6 @@ const DashboardLayout = ({
         md:inset-y-0 z-80 bg-blue-900">
           
           <div>
-          <UserButton afterSignOutUrl="/" />
             Hello Sidebar
            </div> 
         </div>
