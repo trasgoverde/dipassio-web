@@ -6,7 +6,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'DIPASSIO | Digital Passport Through Innovation',
+  title: 'Dipassio | Digital Passport Through Innovation',
   description: 'Digital Passport Through Innovation',
 }
 
