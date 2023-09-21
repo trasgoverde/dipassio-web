@@ -19,10 +19,10 @@ const routes = [
     color: "text-sky-500"
   },
   {
-    label: 'Project & Tasks',
+    label: 'Projects & Tasks',
     icon: Target,
     href: '/project',
-    color: "text-violet-500",
+    color: "text-green-500",
   },
   {
     label: 'Product Spec',
@@ -39,7 +39,7 @@ const routes = [
   {
     label: 'Docs',
     icon: Files,
-    color: "text-emerald-500",
+    color: "text-yellow-500",
     href: '/docs',
   },
   {
@@ -62,10 +62,10 @@ export const Sidebar = ({
   apiLimitCount: number;
   isPro: boolean;
 }) => {
-  const pathname = usePathname();
+  const pathname = usePathname(); 
 
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full bg-[#6366f1] text-white">
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative h-8 w-8 mr-4">
@@ -82,7 +82,7 @@ export const Sidebar = ({
               href={route.href}
               className={cn(
                 "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition",
-                pathname === route.href ? "text-white bg-white/10" : "text-zinc-400",
+                pathname === route.href ? "text-white bg-white/10" : "text-white-400",
               )}
             >
               <div className="flex items-center flex-1">
