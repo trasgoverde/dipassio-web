@@ -21,20 +21,20 @@ const routes = [
   {
     label: 'Projects & Tasks',
     icon: Target,
-    href: '/project',
+    href: '/projects',
     color: "text-green-500",
   },
   {
     label: 'Product Spec',
     icon: Boxes,
     color: "text-pink-400",
-    href: '/image',
+    href: '/product',
   },
   {
     label: 'Meetings',
     icon: CalendarClock,
     color: "text-orange-500",
-    href: '/video',
+    href: '/meetings',
   },
   {
     label: 'Docs',
@@ -46,7 +46,7 @@ const routes = [
     label: 'Product Launch Brief',
     icon: Rocket,
     color: "text-green-500",
-    href: '/code',
+    href: '/launch',
   },
   {
     label: 'Settings',
