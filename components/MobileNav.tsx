@@ -58,6 +58,26 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                 </li>
                 <li className='my-3 h-px w-full bg-gray-300' />
                 <li>
+                <Link
+                    onClick={() =>
+                      closeOnCurrent('/product')
+                    }
+                    className='flex items-center w-full font-semibold'
+                    href='/product'>
+                    Product
+                  </Link>
+                </li>
+                <li>
+                <Link
+                    onClick={() =>
+                      closeOnCurrent('/company')
+                    }
+                    className='flex items-center w-full font-semibold'
+                    href='/company'>
+                    Company
+                  </Link>
+                </li>
+                <li>
                   <Link
                     onClick={() =>
                       closeOnCurrent('/pricing')
@@ -67,6 +87,17 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                     Pricing
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    onClick={() =>
+                      closeOnCurrent('/resources')
+                    }
+                    className='flex items-center w-full font-semibold'
+                    href='/resources'>
+                    Resources
+                  </Link>
+                </li>
+
               </>
             ) : (
               <>
