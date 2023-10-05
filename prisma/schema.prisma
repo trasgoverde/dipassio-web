@@ -16,6 +16,22 @@ model UserApiLimit {
   updatedAt DateTime @updatedAt
 }
 
+model UserData {
+  id        String       @id @default(cuid())
+  userId    String   @unique
+  userEmail String   @unique
+  UserFirstName  String?
+  UserLastName  String?
+  UserAddress       String?
+  UserZipCode   String?
+  UserPhone      String?
+  UserCompany String?
+  UserCif     String?
+  UserProjects Project[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model UserSubscription {
   id        String      @id @default(cuid())
   userId    String   @unique

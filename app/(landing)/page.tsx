@@ -11,18 +11,6 @@ const LandingPage = () => {
   return (
     <>
       <div className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
-      <MaxWidthWrapper>
-      <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
-            <Link
-              href='/'
-              className='flex z-40 font-semibold'>
-              <span>Dipassio | Digital Developments</span>
-            </Link>
-        </div>    
-
-        </MaxWidthWrapper>
-        </div>
-      <div className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
         <MaxWidthWrapper>
           <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
             <Link
@@ -34,6 +22,22 @@ const LandingPage = () => {
             <MobileNav />
 
             <div className='hidden items-center space-x-4 sm:flex'>
+            <Link
+                href='/Product'
+                className={buttonVariants({
+                  variant: 'ghost',
+                  size: 'sm',
+                })}>
+                Product
+              </Link>
+              <Link
+                href='/Company'
+                className={buttonVariants({
+                  variant: 'ghost',
+                  size: 'sm',
+                })}>
+                Documents
+              </Link>
               <Link
                 href='/pricing'
                 className={buttonVariants({
@@ -43,7 +47,15 @@ const LandingPage = () => {
                 Pricing
               </Link>
               <Link
-                href='/signin' // Provide the href attribute here
+                href='/Resources'
+                className={buttonVariants({
+                  variant: 'ghost',
+                  size: 'sm',
+                })}>
+                Company
+              </Link>
+              <Link
+                href='/sign-in' // Provide the href attribute here
                 className={buttonVariants({
                   variant: 'ghost',
                   size: 'sm',
@@ -52,21 +64,12 @@ const LandingPage = () => {
               </Link>
 
               <Link
-                href='/get-started' // Provide the href attribute here
+                href='/sign-up' // Provide the href attribute here
                 className={buttonVariants({
                   size: 'sm',
                 })}>
                 Get started{' '}
                 <ArrowRight className='ml-1.5 h-5 w-5' />
-              </Link>
-
-              <Link
-                href='/dashboard'
-                className={buttonVariants({
-                  variant: 'ghost',
-                  size: 'sm',
-                })}>
-                Dashboard
               </Link>
             </div>
           </div>
@@ -83,12 +86,15 @@ const LandingPage = () => {
         </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mt-5">
           Professional Solutions{" "}
-          <span className="text-blue-600"> & Powerful Applications </span>{" "}
+          <span className="text-blue-600">& Powerful Applications </span>{" "}
           Tailored to your Business needs
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
           Dipassio is a digital product agency that focuses on strategy and
-          design.
+          design. 
+        </p>
+        <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
+          Specifications | Development | Delivery | Deployment
         </p>
         <Link
           className={buttonVariants({
@@ -99,6 +105,7 @@ const LandingPage = () => {
           target="_blank">
           Get Started! <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
+        
       </MaxWidthWrapper>
 
       {/* Value Proposition Section */}
@@ -194,7 +201,7 @@ const LandingPage = () => {
                 Start Developing for you
               </span>
               <span className="mt-2 text-zinc-700">
-                We&apos;ll start developing for you immediately. It's that simple!
+                We&apos;ll start developing for you immediately. It&apos;s that simple!
                 Try out Dipassio today - it really takes a few steps to have
                 your Digital Project deployed.
               </span>
