@@ -25,7 +25,7 @@ const routes = [
     color: "text-green-500",
   },
   {
-    label: 'Product Spec',
+    label: 'Time Diagram',
     icon: Boxes,
     color: "text-pink-400",
     href: '/product',
