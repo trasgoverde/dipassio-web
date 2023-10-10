@@ -2,9 +2,10 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, ClockIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -40,7 +41,7 @@ export default function CalendarReactHookForm() {
     toast({
       title: "You submitted the following values:",
       description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+        <pre className="mt-2 w-[240px] rounded-md bg-slate-950 p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
@@ -48,13 +49,13 @@ export default function CalendarReactHookForm() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-screen">
       <div className="mb-8 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center">
           Project Dashboard
         </h2>
         <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Let's Get Started, !!
+          Let&apos;s Get Started, !!
         </h2>
         <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
           Enjoy the Experience - Just Upload your Assets, Logos and Info
@@ -82,7 +83,7 @@ export default function CalendarReactHookForm() {
                         <Button
                           variant={"outline"}
                           className={cn(
-                            "w-[240px] pl-3 text-left font-normal",
+                            "w-[240px] text-xl pl-3 text-left font-normal",
                             !field.value && "text-muted-foreground"
                           )}
                         >
@@ -91,7 +92,7 @@ export default function CalendarReactHookForm() {
                           ) : (
                             <span>Pick a date</span>
                           )}
-                          <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                          <CalendarIcon className="ml-auto h-8 w-8 opacity-50" />
                         </Button>
                       </FormControl>
                     </PopoverTrigger>
@@ -107,7 +108,7 @@ export default function CalendarReactHookForm() {
                       />
                     </PopoverContent>
                   </Popover>
-                  <FormDescription className="text-lg text-center">
+                  <FormDescription className="text-3xl text-center">
                     We will contact you ASAP!
                   </FormDescription>
                   <FormMessage />

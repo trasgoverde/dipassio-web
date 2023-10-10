@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Navbar } from '@/components/Navbar';
 import { UserButton } from "@clerk/nextjs";
 import MobileNav from '@/components/MobileNav';
+import newsletter from '@/components/newsletter';
+import { Input } from "@/components/ui/input"
 
 
 const LandingPage = () => {
@@ -243,7 +245,7 @@ const LandingPage = () => {
         <div className="w-full max-w-full space-y-4 mx-auto" >
           <div className="grid grid-cols-3 gap-8" >
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-2 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-violet-500  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -270,7 +272,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-2 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-violet-500  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -296,7 +298,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-2 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-violet-500  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -323,7 +325,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-2 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-violet-500  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -348,7 +350,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-2 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-violet-500  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -373,7 +375,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-2 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-violet-500  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -405,6 +407,41 @@ const LandingPage = () => {
   </div>
 </section>
 
+ <section className="w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48">
+      <div className="container px-4 md:px-6">
+        <div className="grid gap-6 items-center">
+          <div className="flex flex-col justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700">
+                Revolutionize Your Email Experience
+              </h1>
+              <p className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                Join us and take control of your inbox. Fast, secure, and designed for modern life.
+              </p>
+            </div>
+            <div className="w-full max-w-sm space-y-2 mx-auto">
+              <form className="flex space-x-2">
+                <Input
+                  className="max-w-lg flex-1 bg-gray-100 text-gary border-gray-900"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+                <Button className="bg-white text-black" type="submit">
+                  Join Now
+                </Button>
+              </form>
+              <p className="text-xs text-zinc-800 dark:text-zinc-100">
+                Get ready to redefine your email experience.
+                <Link className="underline underline-offset-2 text-gray" href="#">
+                  Terms & Conditions
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
         </div>
 
     </>
