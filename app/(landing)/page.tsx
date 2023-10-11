@@ -234,7 +234,7 @@ const LandingPage = () => {
       <div className="flex flex-col justify-center space-y-8 text-center" >
         <div className="space-y-2" >
           <h1
-            className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700"
+            className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700"
           >
                             Discover Our Unique Features
           </h1>
@@ -245,7 +245,7 @@ const LandingPage = () => {
         <div className="w-full max-w-full space-y-4 mx-auto" >
           <div className="grid grid-cols-3 gap-8" >
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-4 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-blue-700  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -264,7 +264,7 @@ const LandingPage = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700" >
+              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700" >
                 Smart Inbox
               </h2>
               <p className="text-zinc-600 dark:text-zinc-700" >
@@ -272,7 +272,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-4 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-blue-700  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -290,7 +290,7 @@ const LandingPage = () => {
                   <path d="m20 22-5-5" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700" >
+              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700" >
                 Seamless Integration
               </h2>
               <p className="text-zinc-600 dark:text-zinc-700" >
@@ -298,7 +298,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-4 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-blue-700  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -317,7 +317,7 @@ const LandingPage = () => {
                   <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700" >
+              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700" >
                 Advanced Customization
               </h2>
               <p className="text-zinc-600 dark:text-zinc-700" >
@@ -325,7 +325,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-4 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-blue-700  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -342,7 +342,7 @@ const LandingPage = () => {
                   <path d="m21 21-4.3-4.3" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700" >
+              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700" >
                 Powerful Search
               </h2>
               <p className="text-zinc-600 dark:text-zinc-700" >
@@ -350,7 +350,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-4 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-blue-700  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -367,7 +367,7 @@ const LandingPage = () => {
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700" >
+              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700" >
                 Reliable Security
               </h2>
               <p className="text-zinc-600 dark:text-zinc-700" >
@@ -375,7 +375,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg" >
-              <div className="p-4 bg-violet-500  rounded-full" >
+              <div className="p-4 bg-blue-700  rounded-full" >
                 <svg
                   className=" text-white h-6 w-6 mb-2 opacity-75"
                   fill="none"
@@ -393,7 +393,7 @@ const LandingPage = () => {
                   <path d="m20 22-5-5" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700" >
+              <h2 className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700" >
                 Easy Collaboration
               </h2>
               <p className="text-zinc-600 dark:text-zinc-700" >
@@ -412,11 +412,11 @@ const LandingPage = () => {
         <div className="grid gap-6 items-center">
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-700">
-                Revolutionize Your Email Experience
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700">
+                Revolutionize Your Develop Experience
               </h1>
               <p className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
-                Join us and take control of your inbox. Fast, secure, and designed for modern life.
+                Join us and take control of your Digital Product. Fast, secure, and designed most modern frameworks.
               </p>
             </div>
             <div className="w-full max-w-sm space-y-2 mx-auto">
@@ -441,7 +441,7 @@ const LandingPage = () => {
         </div>
       </div>
     </section>
-  )
+
         </div>
 
     </>
