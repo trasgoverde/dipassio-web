@@ -7,7 +7,15 @@ import { Navbar } from '@/components/Navbar';
 import { UserButton } from "@clerk/nextjs";
 import MobileNav from '@/components/MobileNav';
 import newsletter from '@/components/newsletter';
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Logo from 'components/icons/Logo';
+import GitHub from 'components/icons/GitHub';
 
 
 const LandingPage = () => {
@@ -441,7 +449,65 @@ const LandingPage = () => {
         </div>
       </div>
     </section>
+    <section className="w-full h-screen py-8 md:py-16 lg:py-24 xl:py-32">
+      <div className="container px-4 md:px-6">
+        <div className="grid gap-6 items-center">
+          <div className="flex flex-col justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700">
+            Frecuent Asked Questions  
+            </h1>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">Is it accessible?</AccordionTrigger>
+                    <AccordionContent className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                   </AccordionContent>
+              </AccordionItem>
+            </Accordion>
 
+            </div> 
+            </div>
+            </div>
+            </div>
+       </section>     
+       
         </div>
 
     </>
