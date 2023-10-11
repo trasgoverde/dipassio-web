@@ -24,8 +24,11 @@ const LandingPage = () => {
       <div className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
         <MaxWidthWrapper>
             
+            
           <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
+            <Logo />
             <Link
+            
               href='/'
               className='flex z-40 font-semibold'>
               <span>Dipassio | Digital Developments</span>
@@ -507,6 +510,20 @@ const LandingPage = () => {
             </div>
             </div>
        </section>     
+       <footer className="mx-auto max-w-[1920px] bg-zinc-100 px-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-zinc-600 py-12 text-black transition-colors duration-150 bg-zinc-100">
+        <div className="col-span-1 lg:col-span-2">
+          <Link href="/">
+            <p className="flex flex-initial items-center font-bold md:mr-24">
+              <span className="rounded-full border border-zinc-700 mr-2">
+                <Logo />
+              </span>
+              <span>DIPASSIO</span>
+            </p>
+          </Link>
+        </div>
+        </div>
+        </footer>
        
         </div>
 
