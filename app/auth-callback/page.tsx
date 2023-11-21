@@ -12,7 +12,12 @@ const Page = async () => {
                 router.push(origin ? `/${origin}` : '/dashboard')
             }
         }
-    }) 
+    })          
+        onError: ({err})  => {
+        if(error) {
+            router.push(origin ? `/${origin}` : '/sign-in')
+        }
+    }
 }
 
 export default Page

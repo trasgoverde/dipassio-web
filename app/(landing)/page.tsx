@@ -30,13 +30,13 @@ const LandingPage = () => {
             <Link
             
               href='/'
-              className='flex z-40 font-semibold'>
+              className='flex z-30 font-bold pr-10 text-lg'>
               <span>Dipassio | Digital Developments</span>
             </Link>
 
             <MobileNav />
 
-            <div className='hidden items-center space-x-4 sm:flex'>
+            <div className='hidden items-center text-lg space-x-8 sm:flex'>
             <Link
                 href='/Product'
                 className={buttonVariants({
@@ -86,6 +86,8 @@ const LandingPage = () => {
                 Get started{' '}
                 <ArrowRight className='ml-1.5 h-5 w-5' />
               </Link>
+
+              
             </div>
           </div>
         </MaxWidthWrapper>
@@ -95,14 +97,14 @@ const LandingPage = () => {
       <MaxWidthWrapper className="mb-12 mt-12 sm:mt-30 flex flex-col items-center justify-center text-center">
         <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
           <p>
-            Dipassio, Digital Passport Through Innovation, Boost your Projects
+            Dipassio, Your Digital Passport Through Innovation, Boost your Projects
             and Save Money 💸!
           </p>
         </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mt-5">
           Professional Solutions{" "}
-          <span className="text-blue-600">& Powerful Applications </span>{" "}
-          Tailored to your Business needs
+          <span className="text-blue-600">Powerful Applications </span>{" "}
+          Tailored to your Business Needs
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
           Dipassio is a digital product agency that focuses on strategy and
@@ -111,6 +113,7 @@ const LandingPage = () => {
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
           Specifications | Development | Delivery | Deployment
         </p>
+        <span className='items-center text-lg space-x-8 sm:flex'>
         <Link
           className={buttonVariants({
             size: "lg",
@@ -120,6 +123,18 @@ const LandingPage = () => {
           target="_blank">
           Get Started! <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
+        
+        
+        <Link
+          className={buttonVariants({
+            size: "lg",
+            className: "mt-5",
+          })}
+          href="/dashboard"
+          target="_blank">
+          Get Started! <ArrowRight className="ml-2 h-5 w-5" />
+        </Link>
+        </span>
         
       </MaxWidthWrapper>
 
@@ -427,7 +442,7 @@ const LandingPage = () => {
                 Revolutionize Your Develop Experience
               </h1>
               <p className="max-w-[600px] text-zinc-800 md:text-xl dark:text-zinc-100 mx-auto">
-                Join us and take control of your Digital Product. Fast, secure, and designed most modern frameworks.
+                Join us and take control of how are your Digital Product being Developed. Fast, secure, and designed most modern frameworks.
               </p>
             </div>
             <div className="w-full max-w-sm space-y-2 mx-auto">
@@ -458,7 +473,7 @@ const LandingPage = () => {
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-700">
-            Frecuent Asked Questions  
+            Frecuent Asked Questions  | FAQ
             </h1>
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
@@ -510,20 +525,102 @@ const LandingPage = () => {
             </div>
             </div>
        </section>     
-       <footer className="mx-auto max-w-[1920px] bg-zinc-100 px-6">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-zinc-600 py-12 text-black transition-colors duration-150 bg-zinc-100">
-        <div className="col-span-1 lg:col-span-2">
+       <footer className="mx-auto max-w-[1920px] bg-zinc-700 px-6 text-white transition-colors duration-150">
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-zinc-600 py-12 text-white transition-colors duration-150 bg-zinc-700">
+    <div className="col-span-1 lg:col-span-2">
+      <Link href="/">
+        <p className="flex flex-initial items-center font-bold md:mr-24">
+          <span className="rounded-full border border-zinc-200 mr-2">
+            <Logo />
+          </span>
+          <span>ACME</span>
+        </p>
+      </Link>
+    </div>
+    <div className="col-span-1 lg:col-span-2">
+      <ul className="flex flex-initial flex-col md:flex-1">
+        <li className="py-3 md:py-0 md:pb-4">
           <Link href="/">
-            <p className="flex flex-initial items-center font-bold md:mr-24">
-              <span className="rounded-full border border-zinc-700 mr-2">
-                <Logo />
-              </span>
-              <span>DIPASSIO</span>
+            <p className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
+              Home
             </p>
           </Link>
-        </div>
-        </div>
-        </footer>
+        </li>
+        <li className="py-3 md:py-0 md:pb-4">
+          <Link href="/">
+            <p className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
+              About
+            </p>
+          </Link>
+        </li>
+        <li className="py-3 md:py-0 md:pb-4">
+          <Link href="/">
+            <p className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
+              Careers
+            </p>
+          </Link>
+        </li>
+        <li className="py-3 md:py-0 md:pb-4">
+          <Link href="/">
+            <p className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
+              Blog
+            </p>
+          </Link>
+        </li>
+      </ul>
+    </div>
+    <div className="col-span-1 lg:col-span-2">
+      <ul className="flex flex-initial flex-col md:flex-1">
+        <li className="py-3 md:py-0 md:pb-4">
+          <p className="text-white font-bold hover:text-zinc-200 transition ease-in-out duration-150">
+            LEGAL
+          </p>
+        </li>
+        <li className="py-3 md:py-0 md:pb-4">
+          <Link href="/">
+            <p className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
+              Privacy Policy
+            </p>
+          </Link>
+        </li>
+        <li className="py-3 md:py-0 md:pb-4">
+          <Link href="/">
+            <p className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
+              Terms of Use
+            </p>
+          </Link>
+        </li>
+      </ul>
+    </div>
+    <div className="col-span-1 lg:col-span-6 flex items-start lg:justify-end text-white">
+      <div className="flex space-x-6 items-center h-10">
+        <p
+          aria-label="Github Repository"
+          href="https://github.com/vercel/nextjs-subscription-payments"
+        >
+          <GitHub />
+        </p>
+      </div>
+    </div>
+  </div>
+  <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4 bg-zinc-700">
+    <div>
+      <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+    </div>
+    <div className="flex items-center">
+      <span className="text-white">Crafted with love in 2023 by</span>
+      <p href="https://dipass.io" aria-label="Dipass.io Link">
+        <Image
+          src="/logo color 512 4.svg"
+          height="32"
+          width="32"
+          alt="Dipass.io Logo"
+          className="inline-block h-6 ml-4 text-white"
+        />
+      </p>
+    </div>
+  </div>
+</footer>
        
         </div>
 
